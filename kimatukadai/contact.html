@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <h1>自己紹介</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">トップ</a></lkimatukadai/css/index.cssi>
+                <li><a href="about.html">自己紹介</a></li>
+                <li><a href="syumi.html">趣味</a></li>
+                <li><a href="yaritaikoto.html">やってみたいこと</a></li>
+                <li><a href="contact.html">お問合せ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h1>お問い合わせ</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">お名前:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">メッセージ:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">送信</button>
+            <div id="responseMessage" class="response-message"></div>
+        </form>
+    </div>
+    <script src="js/contact.js"></script>
+</body>
+</html>

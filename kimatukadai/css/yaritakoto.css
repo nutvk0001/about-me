@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* 全体のスタイルリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 背景色とフォント */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    margin-bottom: 50px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0 30px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.main-nav ul li a:hover {
+    color: #fbff00;
+}
+
+/* メインコンテンツのスタイル */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    position: relative; /* 相対位置を設定 */
+    width: 100vw; /* ビューポート幅 */
+    height: 100vh; /* ビューポート高さ */
+}
+
+.bubble {
+    position: absolute; /* 絶対配置 */
+    border-radius: 50%; /* 円形にする */
+    background-color: rgba(24, 23, 23, 0.7); /* 半透明の白色 */
+    opacity: 0; /* 初期は透明 */
+    animation: rise 2s forwards; /* アニメーション */
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+}
+
+
+/* フッターのスタイル */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
